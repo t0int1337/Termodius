@@ -28,3 +28,6 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 - Add plugin support
 - Add better themes support
 - Find a better way to get the themes directory
+
+## Why this approach?
+I know that modifying the source code is not the best way to add features, but the asar file is not easy to work with and I couldn't find a better way to do it.
