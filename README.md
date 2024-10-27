@@ -6,7 +6,7 @@ A mod for Termius that adds a few features that I think are missing.
 - Devtools
 
 ## Installation
-1. Download the [index.js](https://github.com/t0int1337/Termodius/) file.
+1. Download the [index.js](https://github.com/t0int1337/Termodius/blob/main/index.js) file.
 2. Open libtermius folder:
    - Termius: `%localappdata%\Programs\Termius\resources\app.asar.unpacked\node_modules\@termius\libtermius`
    - Termius Beta: `%localappdata%\Programs\Termius Beta\resources\app.asar.unpacked\node_modules\@termius\libtermius`
