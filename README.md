@@ -13,5 +13,18 @@ A mod for Termius that adds a few features that I think are missing.
 3. Replace the index.js file with the downloaded file.
 4. Restart Termius. (You may need to kill the process in Task Manager)
 
+## Themes
+1. Open the `themes` folder in the Termius directory. (If it doesn't exist, create it)
+2. Add your CSS file to the folder. (You can add multiple themes)
+
+## Creating Themes
+- You can use the Devtools to inspect the elements and create your own CSS file.
+- You can use the example theme (exampletheme.css) to get started.
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## TODO
+- Add plugin support
+- Add better themes support
+- Find a better way to get the themes directory

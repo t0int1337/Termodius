@@ -1,0 +1,866 @@
+/* Example theme for Termodius */
+
+@font-face {
+    font-family: CircularXX;
+    font-weight: 450;
+    font-style: normal;
+    src: url(./CircularXXWeb-Book-884ec4af.woff2) format("woff2")
+}
+
+@font-face {
+    font-family: CircularXX;
+    font-weight: 500;
+    font-style: normal;
+    src: url(./CircularXXWeb-Medium-d5ea45f8.woff2) format("woff2")
+}
+
+@font-face {
+    font-family: CircularXX;
+    font-weight: 700;
+    font-style: normal;
+    src: url(./CircularXXWeb-Bold-d2d92ee9.woff2) format("woff2")
+}
+
+@font-face {
+    font-family: CircularXX;
+    font-weight: 900;
+    font-style: normal;
+    src: url(./CircularXXWeb-Black-d2a82ee9.woff2) format("woff2")
+}
+
+:root {
+    --dark-grey-1: #001a00;
+    --dark-grey-1-a80: #001a00cc;
+    --dark-grey-1-a75: #001a00bf;
+    --dark-grey-1-a50: #001a0080;
+    --dark-grey-1-a40: #001a0099;
+    --dark-grey-1-a20: #001a0033;
+    --dark-grey-1-a10: #001a001a;
+    --dark-grey-1-a05: #001a000d;
+    --dark-grey-2: #002600;
+    --dark-grey-3: #003300;
+    --dark-grey-3-a80: #003300cc;
+    --dark-grey-4: #004d00;
+    --dark-grey-5: #006600;
+    --dark-grey-6: #008000;
+    --dark-grey-6-a70: #008000b3;
+    --dark-grey-7: #00b300;
+    --dark-grey-transparent: #00b30040;
+    --dark-grey-transparent-10: #00b3001a;
+    --dark-grey-transparent-15: #00b30026;
+    --dark-grey-transparent-20: #00b30033;
+    --dark-grey-transparent-35: #00b30059;
+    --dark-grey-transparent-45: #00b30073;
+    --dark-grey-transparent-60: #00b30099;
+    --black: #000000;
+    --black-a03: #00000008;
+    --black-a05: #0000000d;
+    --black-a10: #0000001a;
+    --black-a15: #00000026;
+    --black-a20: #00000033;
+    --black-a25: #00000040;
+    --black-a35: #00000059;
+    --black-a50: #00000080;
+    --black-a90: #000000e6;
+    --light-grey-1: #00ff00;
+    --light-grey-2: #33ff33;
+    --light-grey-3: #66ff66;
+    --light-grey-4: #99ff99;
+    --light-grey-5: #ccffcc;
+    --light-grey-6: #e6ffe6;
+    --light-grey-7: #f2fff2;
+    --light-grey-7-a75: #f2fff2bf;
+    --light-grey-a15: #00ff0026;
+    --light-grey-transparent: #00ff0040;
+    --light-grey-transparent-10: #00ff001a;
+    --light-grey-transparent-20: #00ff0033;
+    --light-grey-transparent-35: #00ff0059;
+    --white: #ffffff;
+    --white-a03: #ffffff08;
+    --white-a05: #ffffff0d;
+    --white-a10: #ffffff1a;
+    --white-a15: #ffffff26;
+    --white-a20: #ffffff33;
+    --white-a25: #ffffff40;
+    --white-a35: #ffffff59;
+    --white-a50: #ffffff80;
+    --white-a75: #ffffffc0;
+    --white-a90: #ffffffe6;
+    --blue-dark: #003300;
+    --blue: #006600;
+    --blue-light: #009900;
+    --blue-transparent: #00660040;
+    --blue-a15: #00660026;
+    --green-dark: #003300;
+    --green: #00ff00;
+    --green-light: #66ff66;
+    --green-transparent: #00ff0040;
+    --dark-blue-solid: #001a00;
+    --dark-blue-solid-a05: #001a000d;
+    --dark-blue-solid-a15: #001a0026;
+    --red-dark: #330000;
+    --red: #660000;
+    --red-light: #990000;
+    --yellow: #cccc00;
+    --teal: #00cccc;
+    --orange: #cc6600;
+    --bright-yellow: #ffff00;
+    --blueberry: #006666;
+    --blueberry-transparent: #00666640;
+    --lime-green: #99cc00;
+    --raspberry: #660033;
+    --raspberry-light: #990066;
+    --creme: #ffffcc;
+    --navy-transparent: #001a00cc;
+    --white-1: #e6ffe6;
+    --white-2: #ccffcc;
+    --white-3: #b3ffb3;
+    --white-4: #99ff99;
+    --white-5: #80ff80;
+    --white-6: #66ff66;
+    --white-7: #4dff4d;
+    --gray-1: #003300;
+    --gray-2: #004d00;
+    --gray-3: #006600;
+    --gray-4: #008000;
+    --gray-5: #009900;
+    --gray-6: #00b300;
+    --black-1: #001a00;
+    --black-2: #003300;
+    --black-3: #004d00;
+    --black-4: #006600;
+    --black-5: #008000;
+    --black-6: #009900;
+    --black-7: #00b300;
+    --gradient-light-main: linear-gradient(230deg, #001a00 0%, #003300 100%);
+    --gradient-universal-main: linear-gradient(135deg, #00ff00 0%, #006600 100%);
+    --gradient-light-outline: linear-gradient(255.54deg, #002600 4.54%, #004d00 60.25%);
+    --gradient-universal-outline: linear-gradient(135deg, rgba(0, 255, 0, .5) 0%, rgba(0, 102, 0, .5) 100%);
+    --universal-gradient-fill: linear-gradient(93deg, #00ff00 -.06%, #006600 99.94%);
+    --universal-gradient-outline: linear-gradient(93deg, rgba(0, 255, 0, .5) -.06%, rgba(0, 102, 0, .5) 99.94%);
+    --main-gradient-fill: linear-gradient(272deg, #001a00 12.03%, #003300 87.44%);
+    --main-gradient-outline: linear-gradient(256deg, #002600 4.54%, #004d00 60.25%);
+
+    --foreground: var(--light-grey-7);
+    --card-a: var(--light-grey-7);
+    --card-b: var(--light-grey-5);
+    --card-c: var(--white);
+    --background: var(--light-grey-6);
+    --background-entity: var(--light-grey-6);
+    --accent: var(--blue);
+    --accent-light: var(--blue-light);
+    --accent-dark: var(--blue-dark);
+    --accent-transparent: var(--blue-transparent);
+    --main: var(--dark-grey-1);
+    --secondary: var(--light-grey-1);
+    --hover-light: rgba(0, 255, 0, .1);
+}
+
+.termius-dark-theme {
+    --dark-grey-1: #000d00;
+    --dark-grey-2: #001400;
+    --dark-grey-3: #001a00;
+    --dark-grey-4: #002600;
+    --dark-grey-5: #003300;
+    --dark-grey-6: #004000;
+    --dark-grey-7: #005900;
+    --light-grey-1: #00b300;
+    --light-grey-2: #00cc00;
+    --light-grey-3: #00e600;
+    --light-grey-4: #1aff1a;
+    --light-grey-5: #4dff4d;
+    --light-grey-6: #80ff80;
+    --light-grey-7: #b3ffb3;
+    --blue-dark: #001a00;
+    --blue: #003300;
+    --blue-light: #004d00;
+    --green-dark: #001a00;
+    --green: #00b300;
+    --green-light: #1aff1a;
+    --dark-blue-solid: #000d00;
+    --red-dark: #4d0000;
+    --red: #800000;
+    --red-light: #b30000;
+    --yellow: #808000;
+    --teal: #008080;
+    --orange: #804000;
+    --bright-yellow: #cccc00;
+    --blueberry: #004d4d;
+    --lime-green: #668000;
+    --raspberry: #4d0026;
+    --raspberry-light: #800040;
+    --creme: #cccc99;
+    --white-1: #ccffcc;
+    --white-2: #b3ffb3;
+    --white-3: #99ff99;
+    --white-4: #80ff80;
+    --white-5: #66ff66;
+    --white-6: #4dff4d;
+    --white-7: #33ff33;
+    --gray-1: #001a00;
+    --gray-2: #002600;
+    --gray-3: #003300;
+    --gray-4: #004000;
+    --gray-5: #004d00;
+    --gray-6: #005900;
+    --black-1: #000d00;
+    --black-2: #001a00;
+    --black-3: #002600;
+    --black-4: #003300;
+    --black-5: #004000;
+    --black-6: #004d00;
+    --black-7: #005900;
+
+    --foreground: var(--dark-grey-3);
+    --card-a: var(--dark-grey-3);
+    --card-b: var(--dark-grey-2);
+    --card-c: var(--dark-grey-4);
+    --background: var(--dark-grey-2);
+    --background-entity: var(--dark-grey-5);
+    --accent: var(--green);
+    --accent-light: var(--green-light);
+    --accent-dark: var(--green-dark);
+    --accent-transparent: var(--green-transparent);
+    --main: var(--light-grey-7);
+    --secondary: var(--dark-grey-7);
+    --hover-light: rgba(0, 255, 0, .1);
+
+    --gradient-light-main: linear-gradient(230deg, #000d00 0%, #001a00 100%);
+    --gradient-universal-main: linear-gradient(135deg, #00b300 0%, #003300 100%);
+    --gradient-light-outline: linear-gradient(255.54deg, #001400 4.54%, #002600 60.25%);
+    --gradient-universal-outline: linear-gradient(135deg, rgba(0, 179, 0, .5) 0%, rgba(0, 51, 0, .5) 100%);
+    --universal-gradient-fill: linear-gradient(93deg, #00b300 -.06%, #003300 99.94%);
+    --universal-gradient-outline: linear-gradient(93deg, rgba(0, 179, 0, .5) -.06%, rgba(0, 51, 0, .5) 99.94%);
+    --main-gradient-fill: linear-gradient(272deg, #000d00 12.03%, #001a00 87.44%);
+    --main-gradient-outline: linear-gradient(256deg, #001400 4.54%, #002600 60.25%);
+}
+
+.termius-dark-theme {
+    --main-gradient-fill: linear-gradient(272deg, #12541b 12.03%, #003666 87.44%);
+    --main-gradient-outline: linear-gradient(256deg, #334d37 4.54%, #264f73 60.25%)
+}
+
+:root {
+    --foreground: var(--light-grey-7);
+    --card-a: var(--light-grey-7);
+    --card-b: var(--light-grey-5);
+    --card-c: var(--white);
+    --background: var(--light-grey-6);
+    --background-entity: var(--light-grey-6);
+    --accent: var(--blue);
+    --accent-light: var(--blue-light);
+    --accent-dark: var(--blue-dark);
+    --accent-transparent: var(--blue-transparent);
+    --main: var(--dark-grey-1);
+    --secondary: var(--light-grey-1);
+    --hover-light: rgba(121, 140, 148, .1)
+}
+
+.termius-dark-theme {
+    --foreground: var(--dark-grey-3);
+    --card-a: var(--dark-grey-3);
+    --card-b: var(--dark-grey-2);
+    --card-c: var(--dark-grey-4);
+    --background: var(--dark-grey-2);
+    --background-entity: var(--dark-grey-5);
+    --accent: var(--green);
+    --accent-light: var(--green-light);
+    --accent-dark: var(--green-dark);
+    --accent-transparent: var(--green-transparent);
+    --main: var(--white);
+    --secondary: var(--dark-grey-7);
+    --hover-light: rgba(141, 145, 165, .1)
+}
+
+@font-face {
+    font-family: Andale Mono;
+    src: url(./AndaleMono-48d9bc61.ttf);
+    font-style: normal;
+    font-weight: 400
+}
+
+@font-face {
+    font-family: Anonymous Pro;
+    src: url(./AnonymiceProNerdFontMono-Regular-fcf2f9ba.ttf);
+    font-style: normal;
+    font-weight: 400
+}
+
+@font-face {
+    font-family: Anonymous Pro;
+    src: url(./AnonymiceProNerdFontMono-Italic-51c2e52a.ttf);
+    font-style: italic;
+    font-weight: 400
+}
+
+@font-face {
+    font-family: Anonymous Pro;
+    src: url(./AnonymiceProNerdFontMono-Bold-b69192d7.ttf);
+    font-style: normal;
+    font-weight: 700
+}
+
+@font-face {
+    font-family: Anonymous Pro;
+    src: url(./AnonymiceProNerdFontMono-BoldItalic-72774935.ttf);
+    font-style: italic;
+    font-weight: 700
+}
+
+@font-face {
+    font-family: Dejavu Sans Mono;
+    src: url(./DejaVuSansMNerdFontMono-Regular-02ad4ecb.ttf);
+    font-style: normal;
+    font-weight: 400
+}
+
+@font-face {
+    font-family: Dejavu Sans Mono;
+    src: url(./DejaVuSansMNerdFontMono-Bold-967b90db.ttf);
+    font-style: normal;
+    font-weight: 700
+}
+
+@font-face {
+    font-family: Droid Sans Mono;
+    src: url(./DroidSansMNerdFontMono-Regular-0eed7946.otf);
+    font-style: normal;
+    font-weight: 400
+}
+
+@font-face {
+    font-family: Fira Mono;
+    src: url(./FiraMonoNerdFontMono-Regular-8f953740.otf);
+    font-style: normal;
+    font-weight: 400
+}
+
+@font-face {
+    font-family: Fira Mono;
+    src: url(./FiraMonoNerdFontMono-Bold-8923d43c.otf);
+    font-style: normal;
+    font-weight: 700
+}
+
+@font-face {
+    font-family: Fira Mono Medium;
+    src: url(./FiraMonoNerdFontMono-Medium-0aa28652.otf);
+    font-style: normal;
+    font-weight: 400
+}
+
+@font-face {
+    font-family: Fira Mono Medium;
+    src: url(./FiraMonoNerdFontMono-Bold-8923d43c.otf);
+    font-style: normal;
+    font-weight: 700
+}
+
+@font-face {
+    font-family: Inconsolata-g;
+    src: url(./InconsolataNerdFontMono-Regular-8e959977.ttf);
+    font-style: normal;
+    font-weight: 400
+}
+
+@font-face {
+    font-family: Inconsolata-g;
+    src: url(./InconsolataNerdFontMono-Bold-ef7f1722.ttf);
+    font-style: normal;
+    font-weight: 700
+}
+
+@font-face {
+    font-family: PT Mono;
+    src: url(./PTM55FT-cbe732b3.ttf);
+    font-style: normal;
+    font-weight: 400
+}
+
+@font-face {
+    font-family: Source Code Pro;
+    src: url(./SauceCodeProNerdFontMono-Regular-a075caa1.ttf);
+    font-style: normal;
+    font-weight: 400
+}
+
+@font-face {
+    font-family: Source Code Pro;
+    src: url(./SauceCodeProNerdFontMono-Italic-4d6320a0.ttf);
+    font-style: italic;
+    font-weight: 400
+}
+
+@font-face {
+    font-family: Source Code Pro;
+    src: url(./SauceCodeProNerdFontMono-Bold-33bdfcf8.ttf);
+    font-style: normal;
+    font-weight: 700
+}
+
+@font-face {
+    font-family: Source Code Pro;
+    src: url(./SauceCodeProNerdFontMono-BoldItalic-a28ba854.ttf);
+    font-style: italic;
+    font-weight: 700
+}
+
+@font-face {
+    font-family: Source Code Pro Medium;
+    src: url(./SauceCodeProNerdFontMono-Medium-cc62f20a.ttf);
+    font-style: normal;
+    font-weight: 400
+}
+
+@font-face {
+    font-family: Source Code Pro Medium;
+    src: url(./SauceCodeProNerdFontMono-MediumItalic-b5c56901.ttf);
+    font-style: italic;
+    font-weight: 400
+}
+
+@font-face {
+    font-family: Source Code Pro Medium;
+    src: url(./SauceCodeProNerdFontMono-Bold-33bdfcf8.ttf);
+    font-style: normal;
+    font-weight: 700
+}
+
+@font-face {
+    font-family: Source Code Pro Medium;
+    src: url(./SauceCodeProNerdFontMono-BoldItalic-a28ba854.ttf);
+    font-style: italic;
+    font-weight: 700
+}
+
+@font-face {
+    font-family: Ubuntu Mono;
+    src: url(./UbuntuMonoNerdFontMono-Regular-e6d08eec.ttf);
+    font-style: normal;
+    font-weight: 400
+}
+
+@font-face {
+    font-family: Ubuntu Mono;
+    src: url(./UbuntuMonoNerdFontMono-Italic-ae8d549e.ttf);
+    font-style: italic;
+    font-weight: 400
+}
+
+@font-face {
+    font-family: Ubuntu Mono;
+    src: url(./UbuntuMonoNerdFontMono-Bold-b998edcd.ttf);
+    font-style: normal;
+    font-weight: 700
+}
+
+@font-face {
+    font-family: Ubuntu Mono;
+    src: url(./UbuntuMonoNerdFontMono-BoldItalic-2e321f94.ttf);
+    font-style: italic;
+    font-weight: 700
+}
+
+@font-face {
+    font-family: Operator Mono Book;
+    src: url(./OperatorMono-Book-8b7c2d70.otf);
+    font-style: normal;
+    font-weight: 400
+}
+
+@font-face {
+    font-family: Operator Mono Book;
+    src: url(./OperatorMono-BookItalic-396571dc.otf);
+    font-style: italic;
+    font-weight: 400
+}
+
+@font-face {
+    font-family: Operator Mono Book;
+    src: url(./OperatorMono-Bold-9efd8643.otf);
+    font-style: normal;
+    font-weight: 700
+}
+
+@font-face {
+    font-family: Operator Mono Book;
+    src: url(./OperatorMono-BoldItalic-e2e03361.otf);
+    font-style: italic;
+    font-weight: 700
+}
+
+@font-face {
+    font-family: Operator Mono Medium;
+    src: url(./OperatorMono-Medium-67ac1792.otf);
+    font-style: normal;
+    font-weight: 400
+}
+
+@font-face {
+    font-family: Operator Mono Medium;
+    src: url(./OperatorMono-MediumItalic-ed2c9869.otf);
+    font-style: italic;
+    font-weight: 400
+}
+
+@font-face {
+    font-family: Operator Mono Medium;
+    src: url(./OperatorMono-Bold-9efd8643.otf);
+    font-style: normal;
+    font-weight: 700
+}
+
+@font-face {
+    font-family: Operator Mono Medium;
+    src: url(./OperatorMono-BoldItalic-e2e03361.otf);
+    font-style: italic;
+    font-weight: 700
+}
+
+@font-face {
+    font-family: Cascadia Code;
+    src: url(./CaskaydiaCoveNerdFontMono-Regular-f30b07c7.ttf);
+    font-style: normal;
+    font-weight: 400
+}
+
+@font-face {
+    font-family: Cascadia Code;
+    src: url(./CaskaydiaCoveNerdFontMono-Bold-d73327e9.ttf);
+    font-style: normal;
+    font-weight: 700
+}
+
+@font-face {
+    font-family: Fira Code;
+    src: url(./FiraCodeNerdFont-Regular-7e49cee3.ttf);
+    font-style: normal;
+    font-weight: 400
+}
+
+@font-face {
+    font-family: Fira Code;
+    src: url(./FiraCodeNerdFontMono-Bold-08b86e12.ttf);
+    font-style: normal;
+    font-weight: 700
+}
+
+@font-face {
+    font-family: JetBrains Mono;
+    src: url(./JetBrainsMonoNerdFontMono-Regular-276cf05f.ttf);
+    font-style: normal;
+    font-weight: 400
+}
+
+@font-face {
+    font-family: JetBrains Mono;
+    src: url(./JetBrainsMonoNerdFontMono-Bold-1a606ae3.ttf);
+    font-style: normal;
+    font-weight: 700
+}
+
+@font-face {
+    font-family: Meslo;
+    src: url(./MesloLGSNerdFontMono-Regular-7fc866e6.ttf);
+    font-style: normal;
+    font-weight: 400
+}
+
+@font-face {
+    font-family: Meslo;
+    src: url(./MesloLGSNerdFontMono-Bold-cf2b2171.ttf);
+    font-style: normal;
+    font-weight: 700
+}
+
+:root {
+    --header-height: 56px;
+    --max-terminal-width: 180px;
+    --active-terminal-width: 240px;
+    --default-font-size: 14px;
+    --border-radius: 6px;
+    --c-text-common: var(--light-grey-3);
+    --c-text-description: var(--light-grey-1);
+    --c-title: var(--dark-grey-1);
+    --c-title-selected: var(--dark-grey-1);
+    --c-description-selected: var(--dark-grey-1);
+    --c-subtitle: #9ea5b3;
+    --c-green: #00cc74;
+    --c-red: var(--red-dark);
+    --c-blue: var(--blue);
+    --black-a05: rgba(0, 0, 0, .05);
+    --black-a1: rgba(0, 0, 0, .1);
+    --black-a15: rgba(0, 0, 0, .15);
+    --white-a54: rgba(255, 255, 255, .54);
+    --navy: var(--dark-blue-solid);
+    --gray: var(--black-4);
+    --success-medium: #00cc74;
+    --success-light: #49e287;
+    --info-dark: var(--blue-dark);
+    --info: var(--blue);
+    --error-medium: var(--red);
+    --warning-medium: var(--yellow);
+    --c-border: var(--light-grey-4);
+    --main-bg: var(--white);
+    --main-color: var(--dark-grey-4);
+    --main-side-bg: var(--light-grey-6);
+    --main-form-bg: var(--white);
+    --disabled-button-bg: var(--light-grey-5);
+    --input-border-focused: var(--blue);
+    --border-color: var(--light-grey-4);
+    --input-color: var(--dark-grey-4);
+    --host-title-color: var(--dark-grey-4);
+    --sftp-path: var(--dark-grey-4);
+    --sftp-border: var(--light-grey-4);
+    --sftp-hover: var(--light-grey-6);
+    --sftp-table-header: var(--card-b);
+    --sftp-loader-overlay: rgba(255, 255, 255, .38);
+    --error-dialog-bar: var(--error-medium);
+    --list-hover: var(--light-grey-5);
+    --list-hover-hover: var(--light-grey-5);
+    --list-select: var(--light-grey-4);
+    --c-dark-border-color: var(--dark-grey-2);
+    --filters-header-icon: var(--dark-grey-4);
+    --filters-header-color: var(--dark-grey-4);
+    --menu-border: 1px solid var(--c-dark-border-color);
+    --text-primary: var(--dark-grey-4);
+    --text-common: #0f364e;
+    --text-secondary: #9ea5b3;
+    --text-success: var(--success-medium);
+    --text-info: var(--info);
+    --text-warning: var(--yellow);
+    --text-error: var(--error-medium);
+    --system-button-close-hover: #e81123;
+    --system-button-hover: var(--light-grey-1);
+    --system-button-icon: var(--light-grey-1);
+    --system-button-icon-hover: var(--white);
+    --entity-grid-background: var(--light-grey-6);
+    --entity-list-background: var(--white);
+    --entity-item-background: var(--white);
+    --team-trial-identity-icon: var(--dark-grey-3);
+    --team-trial-identity-background: var(--light-grey-6);
+    --pf-connection-progress: var(--c-blue);
+    --ce-survey-background: var(--blue);
+    --ce-survey-score-background: var(--blue-dark);
+    --ce-survey-score-vr: var(--accent);
+    --ce-survey-border-color: var(--accent);
+    --ce-survey-text-aria: var(--white);
+    --ce-survey-text-color: var(--white);
+    --ce-survey-score-size: 31px;
+    --ce-survey-accent-color: var(--accent);
+    --ce-survey-feedback-input-background: var(--blue-dark);
+    --backdrop-color: rgba(20, 23, 41, .5);
+    --backdrop-color-windows: rgba(20, 23, 41, .35);
+    --cf-main-background: var(--light-grey-6);
+    --cf-logs-background: var(--light-grey-7);
+    --cf-list-shadow-mask: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 30px);
+    --cf-list-item-background: var(--light-grey-7);
+    --picker-border-color: var(--light-grey-4)
+}
+
+.termius-dark-theme {
+    --c-dark-border-color: var(--dark-grey-1);
+    --menu-border: 1px solid var(--c-dark-border-color);
+    --c-border: var(--c-dark-border-color);
+    --c-title: var(--light-grey-7);
+    --c-title-selected: var(--light-grey-7);
+    --c-description-selected: var(--light-grey-7);
+    --main-bg: var(--dark-grey-2);
+    --main-color: var(--white);
+    --main-side-bg: var(--dark-grey-2);
+    --main-form-bg: var(--dark-grey-4);
+    --disabled-button-bg: var(--dark-grey-4);
+    --input-border-focused: #00cc74;
+    --border-color: var(--c-dark-border-color);
+    --input-color: var(--white);
+    --host-title-color: var(--light-grey-3);
+    --sftp-path: var(--light-grey-3);
+    --sftp-border: var(--c-dark-border-color);
+    --sftp-hover: var(--dark-grey-5);
+    --sftp-loader-overlay: rgba(0, 0, 0, .38);
+    --list-hover: var(--dark-grey-5);
+    --list-hover-hover: var(--dark-grey-4);
+    --list-select: var(--dark-grey-4);
+    --filters-header-icon: var(--dark-grey-6);
+    --filters-header-color: var(--light-grey-6);
+    --error-dialog-bar: var(--dark-grey-3);
+    --text-primary: var(--white);
+    --text-common: var(--light-grey-3);
+    --system-button-hover: var(--white);
+    --system-button-icon: var(--white);
+    --system-button-icon-hover: var(--dark-grey-1);
+    --entity-grid-background: var(--dark-grey-2);
+    --entity-list-background: var(--dark-grey-2);
+    --entity-item-background: var(--dark-grey-3);
+    --pf-connection-progress: var(--c-green);
+    --ce-survey-background: var(--dark-grey-4);
+    --ce-survey-score-background: var(--dark-grey-5);
+    --ce-survey-score-vr: var(--dark-grey-6);
+    --ce-survey-border-color: var(--dark-grey-6);
+    --ce-survey-text-aria: var(--dark-grey-4);
+    --ce-survey-text-color: var(--dark-grey-7);
+    --ce-survey-feedback-input-background: var(--dark-grey-5);
+    --cf-main-background: var(--dark-grey-1);
+    --cf-logs-background: var(--dark-grey-3);
+    --cf-list-item-background: var(--dark-grey-3);
+    --picker-border-color: var(--dark-grey-1);
+    --backdrop-color: rgba(0, 0, 0, .5);
+    --backdrop-color-windows: rgba(0, 0, 0, .5);
+    --sidebar-accent: var(--blue);
+    --sidebar-accent-light: var(--blue-light);
+    --sidebar-accent-dark: var(--blue-dark);
+    --sidebar-accent-alpha: var(--blue-alpha)
+}
+
+.termius-dark-theme .termius-dark-theme {
+    --sidebar-accent: var(--green);
+    --sidebar-accent-light: var(--green-light);
+    --sidebar-accent-dark: var(--green-dark);
+    --sidebar-accent-alpha: var(--green-alpha)
+}
+
+:root {
+    --form-input-color: var(--light-grey-3);
+    --form-input-text-color: var(--dark-grey-4);
+    --form-disabled-input-color: var(--light-grey-4)
+}
+
+.termius-dark-theme {
+    --form-input-color: var(--light-grey-3);
+    --form-input-text-color: var(--white);
+    --form-disabled-input-color: var(--dark-grey-6)
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -webkit-user-select: none;
+    user-select: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    list-style: none
+}
+
+input,
+button,
+textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit
+}
+
+html {
+    overflow-y: auto !important
+}
+
+body {
+    font-family: CircularXX, sans-serif;
+    font-variant-numeric: normal;
+    font-size: var(--default-font-size);
+    color: #0f364e;
+    cursor: default;
+    overflow: hidden;
+    position: fixed;
+    border-radius: var(--app-window-border-radius);
+    border: none
+}
+
+img {
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none
+}
+
+body:hover ::-webkit-scrollbar-thumb {
+    display: block
+}
+
+button {
+    cursor: default !important
+}
+
+.text-bright {
+    color: var(--white)
+}
+
+.solid {
+    background-color: var(--dark-grey-1)
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0
+}
+
+.context-menu {
+    display: none;
+    position: fixed;
+    z-index: 150;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    box-shadow: 0 6px 10px #0003;
+    font-size: 12px;
+    color: #0f364e
+}
+
+.context-menu.open {
+    display: block
+}
+
+.context-menu-off {
+    display: none !important
+}
+
+.merged {
+    color: #999 !important
+}
+
+:root {
+    --scrollbar-width: 8px;
+    --scrollbar-thumb-color: #d9d9d9
+}
+
+::-webkit-scrollbar {
+    width: var(--scrollbar-width)
+}
+
+::-webkit-scrollbar-track {
+    display: none
+}
+
+::-webkit-scrollbar-thumb {
+    display: none;
+    background-color: var(--scrollbar-thumb-color);
+    background-clip: padding-box;
+    border-radius: 3px;
+    border-right: 2px solid transparent;
+    border-left: 2px solid transparent
+}
+
+.termius-dark-theme {
+    color: var(--light-grey-3)
+}
+
+.termius-dark-theme::-webkit-scrollbar-thumb,
+.termius-dark-theme ::-webkit-scrollbar-thumb {
+    background-color: var(--dark-grey-6)
+}
+
+input {
+    background-color: var(--main-form-bg);
+    color: var(--main-color)
+}
+
+.mac {
+    --app-window-border-radius: 10px
+}
+
+.linux,
+.win,
+.full-screen {
+    --app-window-border-radius: 0px
+}

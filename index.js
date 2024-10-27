@@ -30,15 +30,31 @@ setTimeout(() => {
       }
     });
 
-    focusedWindow.webContents.executeJavaScript(`
-      const fs = require('fs');
-      const path = require('path');
-      console.log('executing css injection');
-      console.log(path.join(__dirname, '../../../../../theme.css'));
-      const css = fs.readFileSync(path.join(__dirname, '../../../../../theme.css'), 'utf8');
-      const style = document.createElement('style');
-      style.innerHTML = css;
-      document.head.appendChild(style);
+        focusedWindow.webContents.executeJavaScript(`
+const fs = require('fs');
+const path = require('path');
+const themesDir = path.join(__dirname, '../../../../../themes');
+
+console.log('executing css injection');
+
+if (!fs.existsSync(themesDir)) {
+    fs.mkdirSync(themesDir);
+}
+fs.readdir(themesDir, (err, files) => {
+    if (err) {
+        console.error('Error reading themes directory:', err);
+        return;
+    }
+
+    files.filter(file => file.endsWith('.css')).forEach(file => {
+        const cssPath = path.join(themesDir, file);
+        console.log('Injecting CSS from:', cssPath);
+        const css = fs.readFileSync(cssPath, 'utf8');
+        const style = document.createElement('style');
+        style.innerHTML = css;
+        document.head.appendChild(style);
+    });
+});
     `);
   } catch (e) {
     console.log(e);
