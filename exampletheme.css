@@ -4,28 +4,28 @@
     font-family: CircularXX;
     font-weight: 450;
     font-style: normal;
-    src: url(./CircularXXWeb-Book-884ec4af.woff2) format("woff2")
+    src: url(../../assets/CircularXXWeb-Book-884ec4af.woff2) format("woff2")
 }
 
 @font-face {
     font-family: CircularXX;
     font-weight: 500;
     font-style: normal;
-    src: url(./CircularXXWeb-Medium-d5ea45f8.woff2) format("woff2")
+    src: url(../../assets/CircularXXWeb-Medium-d5ea45f8.woff2) format("woff2")
 }
 
 @font-face {
     font-family: CircularXX;
     font-weight: 700;
     font-style: normal;
-    src: url(./CircularXXWeb-Bold-d2d92ee9.woff2) format("woff2")
+    src: url(../../assets/CircularXXWeb-Bold-d2d92ee9.woff2) format("woff2")
 }
 
 @font-face {
     font-family: CircularXX;
     font-weight: 900;
     font-style: normal;
-    src: url(./CircularXXWeb-Black-d2a82ee9.woff2) format("woff2")
+    src: url(../../assets/CircularXXWeb-Black-d2a82ee9.woff2) format("woff2")
 }
 
 :root {
@@ -274,301 +274,301 @@
 
 @font-face {
     font-family: Andale Mono;
-    src: url(./AndaleMono-48d9bc61.ttf);
+    src: url(../../assets/AndaleMono-48d9bc61.ttf);
     font-style: normal;
     font-weight: 400
 }
 
 @font-face {
     font-family: Anonymous Pro;
-    src: url(./AnonymiceProNerdFontMono-Regular-fcf2f9ba.ttf);
+    src: url(../../assets/AnonymiceProNerdFontMono-Regular-fcf2f9ba.ttf);
     font-style: normal;
     font-weight: 400
 }
 
 @font-face {
     font-family: Anonymous Pro;
-    src: url(./AnonymiceProNerdFontMono-Italic-51c2e52a.ttf);
+    src: url(../../assets/AnonymiceProNerdFontMono-Italic-51c2e52a.ttf);
     font-style: italic;
     font-weight: 400
 }
 
 @font-face {
     font-family: Anonymous Pro;
-    src: url(./AnonymiceProNerdFontMono-Bold-b69192d7.ttf);
+    src: url(../../assets/AnonymiceProNerdFontMono-Bold-b69192d7.ttf);
     font-style: normal;
     font-weight: 700
 }
 
 @font-face {
     font-family: Anonymous Pro;
-    src: url(./AnonymiceProNerdFontMono-BoldItalic-72774935.ttf);
+    src: url(../../assets/AnonymiceProNerdFontMono-BoldItalic-72774935.ttf);
     font-style: italic;
     font-weight: 700
 }
 
 @font-face {
     font-family: Dejavu Sans Mono;
-    src: url(./DejaVuSansMNerdFontMono-Regular-02ad4ecb.ttf);
+    src: url(../../assets/DejaVuSansMNerdFontMono-Regular-02ad4ecb.ttf);
     font-style: normal;
     font-weight: 400
 }
 
 @font-face {
     font-family: Dejavu Sans Mono;
-    src: url(./DejaVuSansMNerdFontMono-Bold-967b90db.ttf);
+    src: url(../../assets/DejaVuSansMNerdFontMono-Bold-967b90db.ttf);
     font-style: normal;
     font-weight: 700
 }
 
 @font-face {
     font-family: Droid Sans Mono;
-    src: url(./DroidSansMNerdFontMono-Regular-0eed7946.otf);
+    src: url(../../assets/DroidSansMNerdFontMono-Regular-0eed7946.otf);
     font-style: normal;
     font-weight: 400
 }
 
 @font-face {
     font-family: Fira Mono;
-    src: url(./FiraMonoNerdFontMono-Regular-8f953740.otf);
+    src: url(../../assets/FiraMonoNerdFontMono-Regular-8f953740.otf);
     font-style: normal;
     font-weight: 400
 }
 
 @font-face {
     font-family: Fira Mono;
-    src: url(./FiraMonoNerdFontMono-Bold-8923d43c.otf);
+    src: url(../../assets/FiraMonoNerdFontMono-Bold-8923d43c.otf);
     font-style: normal;
     font-weight: 700
 }
 
 @font-face {
     font-family: Fira Mono Medium;
-    src: url(./FiraMonoNerdFontMono-Medium-0aa28652.otf);
+    src: url(../../assets/FiraMonoNerdFontMono-Medium-0aa28652.otf);
     font-style: normal;
     font-weight: 400
 }
 
 @font-face {
     font-family: Fira Mono Medium;
-    src: url(./FiraMonoNerdFontMono-Bold-8923d43c.otf);
+    src: url(../../assets/FiraMonoNerdFontMono-Bold-8923d43c.otf);
     font-style: normal;
     font-weight: 700
 }
 
 @font-face {
     font-family: Inconsolata-g;
-    src: url(./InconsolataNerdFontMono-Regular-8e959977.ttf);
+    src: url(../../assets/InconsolataNerdFontMono-Regular-8e959977.ttf);
     font-style: normal;
     font-weight: 400
 }
 
 @font-face {
     font-family: Inconsolata-g;
-    src: url(./InconsolataNerdFontMono-Bold-ef7f1722.ttf);
+    src: url(../../assets/InconsolataNerdFontMono-Bold-ef7f1722.ttf);
     font-style: normal;
     font-weight: 700
 }
 
 @font-face {
     font-family: PT Mono;
-    src: url(./PTM55FT-cbe732b3.ttf);
+    src: url(../../assets/PTM55FT-cbe732b3.ttf);
     font-style: normal;
     font-weight: 400
 }
 
 @font-face {
     font-family: Source Code Pro;
-    src: url(./SauceCodeProNerdFontMono-Regular-a075caa1.ttf);
+    src: url(../../assets/SauceCodeProNerdFontMono-Regular-a075caa1.ttf);
     font-style: normal;
     font-weight: 400
 }
 
 @font-face {
     font-family: Source Code Pro;
-    src: url(./SauceCodeProNerdFontMono-Italic-4d6320a0.ttf);
+    src: url(../../assets/SauceCodeProNerdFontMono-Italic-4d6320a0.ttf);
     font-style: italic;
     font-weight: 400
 }
 
 @font-face {
     font-family: Source Code Pro;
-    src: url(./SauceCodeProNerdFontMono-Bold-33bdfcf8.ttf);
+    src: url(../../assets/SauceCodeProNerdFontMono-Bold-33bdfcf8.ttf);
     font-style: normal;
     font-weight: 700
 }
 
 @font-face {
     font-family: Source Code Pro;
-    src: url(./SauceCodeProNerdFontMono-BoldItalic-a28ba854.ttf);
+    src: url(../../assets/SauceCodeProNerdFontMono-BoldItalic-a28ba854.ttf);
     font-style: italic;
     font-weight: 700
 }
 
 @font-face {
     font-family: Source Code Pro Medium;
-    src: url(./SauceCodeProNerdFontMono-Medium-cc62f20a.ttf);
+    src: url(../../assets/SauceCodeProNerdFontMono-Medium-cc62f20a.ttf);
     font-style: normal;
     font-weight: 400
 }
 
 @font-face {
     font-family: Source Code Pro Medium;
-    src: url(./SauceCodeProNerdFontMono-MediumItalic-b5c56901.ttf);
+    src: url(../../assets/SauceCodeProNerdFontMono-MediumItalic-b5c56901.ttf);
     font-style: italic;
     font-weight: 400
 }
 
 @font-face {
     font-family: Source Code Pro Medium;
-    src: url(./SauceCodeProNerdFontMono-Bold-33bdfcf8.ttf);
+    src: url(../../assets/SauceCodeProNerdFontMono-Bold-33bdfcf8.ttf);
     font-style: normal;
     font-weight: 700
 }
 
 @font-face {
     font-family: Source Code Pro Medium;
-    src: url(./SauceCodeProNerdFontMono-BoldItalic-a28ba854.ttf);
+    src: url(../../assets/SauceCodeProNerdFontMono-BoldItalic-a28ba854.ttf);
     font-style: italic;
     font-weight: 700
 }
 
 @font-face {
     font-family: Ubuntu Mono;
-    src: url(./UbuntuMonoNerdFontMono-Regular-e6d08eec.ttf);
+    src: url(../../assets/UbuntuMonoNerdFontMono-Regular-e6d08eec.ttf);
     font-style: normal;
     font-weight: 400
 }
 
 @font-face {
     font-family: Ubuntu Mono;
-    src: url(./UbuntuMonoNerdFontMono-Italic-ae8d549e.ttf);
+    src: url(../../assets/UbuntuMonoNerdFontMono-Italic-ae8d549e.ttf);
     font-style: italic;
     font-weight: 400
 }
 
 @font-face {
     font-family: Ubuntu Mono;
-    src: url(./UbuntuMonoNerdFontMono-Bold-b998edcd.ttf);
+    src: url(../../assets/UbuntuMonoNerdFontMono-Bold-b998edcd.ttf);
     font-style: normal;
     font-weight: 700
 }
 
 @font-face {
     font-family: Ubuntu Mono;
-    src: url(./UbuntuMonoNerdFontMono-BoldItalic-2e321f94.ttf);
+    src: url(../../assets/UbuntuMonoNerdFontMono-BoldItalic-2e321f94.ttf);
     font-style: italic;
     font-weight: 700
 }
 
 @font-face {
     font-family: Operator Mono Book;
-    src: url(./OperatorMono-Book-8b7c2d70.otf);
+    src: url(../../assets/OperatorMono-Book-8b7c2d70.otf);
     font-style: normal;
     font-weight: 400
 }
 
 @font-face {
     font-family: Operator Mono Book;
-    src: url(./OperatorMono-BookItalic-396571dc.otf);
+    src: url(../../assets/OperatorMono-BookItalic-396571dc.otf);
     font-style: italic;
     font-weight: 400
 }
 
 @font-face {
     font-family: Operator Mono Book;
-    src: url(./OperatorMono-Bold-9efd8643.otf);
+    src: url(../../assets/OperatorMono-Bold-9efd8643.otf);
     font-style: normal;
     font-weight: 700
 }
 
 @font-face {
     font-family: Operator Mono Book;
-    src: url(./OperatorMono-BoldItalic-e2e03361.otf);
+    src: url(../../assets/OperatorMono-BoldItalic-e2e03361.otf);
     font-style: italic;
     font-weight: 700
 }
 
 @font-face {
     font-family: Operator Mono Medium;
-    src: url(./OperatorMono-Medium-67ac1792.otf);
+    src: url(../../assets/OperatorMono-Medium-67ac1792.otf);
     font-style: normal;
     font-weight: 400
 }
 
 @font-face {
     font-family: Operator Mono Medium;
-    src: url(./OperatorMono-MediumItalic-ed2c9869.otf);
+    src: url(../../assets/OperatorMono-MediumItalic-ed2c9869.otf);
     font-style: italic;
     font-weight: 400
 }
 
 @font-face {
     font-family: Operator Mono Medium;
-    src: url(./OperatorMono-Bold-9efd8643.otf);
+    src: url(../../assets/OperatorMono-Bold-9efd8643.otf);
     font-style: normal;
     font-weight: 700
 }
 
 @font-face {
     font-family: Operator Mono Medium;
-    src: url(./OperatorMono-BoldItalic-e2e03361.otf);
+    src: url(../../assets/OperatorMono-BoldItalic-e2e03361.otf);
     font-style: italic;
     font-weight: 700
 }
 
 @font-face {
     font-family: Cascadia Code;
-    src: url(./CaskaydiaCoveNerdFontMono-Regular-f30b07c7.ttf);
+    src: url(../../assets/CaskaydiaCoveNerdFontMono-Regular-f30b07c7.ttf);
     font-style: normal;
     font-weight: 400
 }
 
 @font-face {
     font-family: Cascadia Code;
-    src: url(./CaskaydiaCoveNerdFontMono-Bold-d73327e9.ttf);
+    src: url(../../assets/CaskaydiaCoveNerdFontMono-Bold-d73327e9.ttf);
     font-style: normal;
     font-weight: 700
 }
 
 @font-face {
     font-family: Fira Code;
-    src: url(./FiraCodeNerdFont-Regular-7e49cee3.ttf);
+    src: url(../../assets/FiraCodeNerdFont-Regular-7e49cee3.ttf);
     font-style: normal;
     font-weight: 400
 }
 
 @font-face {
     font-family: Fira Code;
-    src: url(./FiraCodeNerdFontMono-Bold-08b86e12.ttf);
+    src: url(../../assets/FiraCodeNerdFontMono-Bold-08b86e12.ttf);
     font-style: normal;
     font-weight: 700
 }
 
 @font-face {
     font-family: JetBrains Mono;
-    src: url(./JetBrainsMonoNerdFontMono-Regular-276cf05f.ttf);
+    src: url(../../assets/JetBrainsMonoNerdFontMono-Regular-276cf05f.ttf);
     font-style: normal;
     font-weight: 400
 }
 
 @font-face {
     font-family: JetBrains Mono;
-    src: url(./JetBrainsMonoNerdFontMono-Bold-1a606ae3.ttf);
+    src: url(../../assets/JetBrainsMonoNerdFontMono-Bold-1a606ae3.ttf);
     font-style: normal;
     font-weight: 700
 }
 
 @font-face {
     font-family: Meslo;
-    src: url(./MesloLGSNerdFontMono-Regular-7fc866e6.ttf);
+    src: url(../../assets/MesloLGSNerdFontMono-Regular-7fc866e6.ttf);
     font-style: normal;
     font-weight: 400
 }
 
 @font-face {
     font-family: Meslo;
-    src: url(./MesloLGSNerdFontMono-Bold-cf2b2171.ttf);
+    src: url(../../assets/MesloLGSNerdFontMono-Bold-cf2b2171.ttf);
     font-style: normal;
     font-weight: 700
 }
