@@ -1,6 +1,8 @@
 # Termodius
 A mod for Termius that adds a few features that I think are missing.
 
+#### The project needs contributors as I can not work on the project at the moment. Pull requests are welcome. 
+
 ## Features
 - Custom CSS Themes
 - Devtools
